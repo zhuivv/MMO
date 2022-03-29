@@ -20,9 +20,9 @@ y2 = mvnrnd(0,1,n);
 y0 = D(:,3);
 
 coef = (mvnrnd([0 0 0],eye(3)*0.01,100))';
-coef(1,1:30) = coef(1,1:30)+1; 
+coef(1,1:30) = coef(1,1:30)+c1; 
 coef(2,31:(30+cat)) = coef(2,31:(30+cat))+1;
-coef(3,(30+cat+1):100) = coef(3,(30+cat+1):100)+0.9;
+coef(3,(30+cat+1):100) = coef(3,(30+cat+1):100)+c2;
 M = [m1 m0 m2]*coef;
 
 
