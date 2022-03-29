@@ -10,7 +10,7 @@ function [x M Y] = sim(n,a,b,c,c1,c2,cat)
 % output: M is the simulated multivariate mediators
 % output: Y is the simulated multivariate outcomes
 
-Omg=eye(3)+squareform([a,c,b]);
+Omg=eye(3)+squareform([a,b,c]);
 D = mvnrnd([0 0 0 ],Omg^-1,n);
 m1 = mvnrnd(0.1,1,n);
 m2 = mvnrnd(-0.1,1,n);
