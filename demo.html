@@ -9,3 +9,5 @@ figure;imagesc(-log(pmat));colormap jet; colorbar;
 W = -log(pmat);
 figure;imagesc(W([M_in setdiff(1:size(W,1),M_in)],[Y_in setdiff(1:size(W,2),Y_in)]));colormap jet; colorbar;
 
+% permutation test
+[p permt t0] =permutation(x,M,Y,10);
