@@ -35,7 +35,7 @@ if isempty(s_in)&&isempty(t_in)
     s_in = setdiff(1:size(W,1),s_rev);
     t_in = setdiff(1:size(W,2),t_rev);
     catch ERM
-    fprintf(ERM.message);
+    fprintf('%i%s\n',ERM.message);
     end
 end
 if isempty(s_in)&&isempty(t_in)
