@@ -2,8 +2,8 @@ function [s_in t_in eff pmat]=M6(x,M,Y,Cov,r)
 % input x is the univariate exposure
 % input M is the multivariate mediators
 % input Y is the multivariate outcomes
-% input Cov is the adjusted covariates matrix
-% r is an optional input: the threshold of p-values
+% Cov is an optional input: the adjusted covariates matrix, if none, input []
+% r is an optional input: the threshold of p-values, if none, input []
 
 % output M_in is the selected mediators
 % output Y_in is the selected outcomes
