@@ -86,7 +86,7 @@ Connected to the parallel pool (number of workers: 8).
 ##### SOURCE BEGIN #####
 %% simulation data: mediation effect is 0.16
 load('simdata.mat');% simulate data
-[M_in Y_in eff pmat] = M6(x,M,Y); % apply M6
+[M_in Y_in eff pmat] = M6(x,M,Y,[],[]); % apply M6
 
 %% Step 1 results: p-value matrix plot for original and shulffled
 figure;imagesc(-log(pmat));colormap jet; colorbar;
